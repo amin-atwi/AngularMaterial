@@ -1,0 +1,41 @@
+<section style="margin: 0.4vh;">
+  <section>
+    <mat-toolbar color="accent">
+      <mat-toolbar-row >
+      <button mat-icon-button color="primary">
+      <mat-icon>search</mat-icon>
+      </button>
+
+      <span class="spacer"></span>
+      <button mat-raised-button color="primary">Add New</button>
+      </mat-toolbar-row>
+    </mat-toolbar>
+  </section>
+  <section>
+    <mat-grid-list cols="3">
+      <mat-grid-tile *ngFor="let tile of tiles">
+
+        <div class="mat-grid-list-item accent-background-color">
+            <div class="mat-grid-list-item-header primary-background-color">
+              <b>Identification Card</b>
+            </div>
+
+            <div class="mat-grid-list-item-body">
+               <div class="mat-grid-list-item-body-row">
+                <div class="mat-grid-list-item-body-column">
+                  <img src="https://www.w3schools.com/howto/img_forest.jpg"  class="image" />
+                </div>
+                <div class="mat-grid-list-item-body-column">
+                   <p>Id : 1234</p>
+                   <p>Id : 1234</p>
+                   <p>Id : 1234</p>
+                   <p>Id : 1234</p>
+                   <p>Id : 1234</p>
+                </div>
+              </div>
+            </div>
+        </div>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </section>
+</section>

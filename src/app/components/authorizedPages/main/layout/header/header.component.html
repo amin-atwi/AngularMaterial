@@ -1,0 +1,16 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row >
+    <button mat-icon-button (click)="toggleLeftSideBar()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span> App Logo</span>
+    <span class="example-spacer"></span>
+
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon" (click)="toggleRightSideBar()">
+      <mat-icon>settings</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon" (click)="logout()">
+      <span class="material-icons">logout</span>
+    </button>
+  </mat-toolbar-row>
+</mat-toolbar>

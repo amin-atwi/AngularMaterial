@@ -1,0 +1,15 @@
+<app-header (ToggleSideBarForLeftMenu)="RSideBarToggle($event)"></app-header>
+<mat-drawer-container>
+  <mat-drawer mode="side" position="start" [opened]="RSideBarOpen" class="accent-background-color">
+    <app-left-side-bar></app-left-side-bar>
+  </mat-drawer>
+
+  <mat-drawer-content>
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+
+  <mat-drawer mode="side" position="end" [opened]="LSideBarOpen" class="accent-background-color">
+    <app-right-side-bar></app-right-side-bar>
+  </mat-drawer>
+</mat-drawer-container>
+<app-footer></app-footer>
